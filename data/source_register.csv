@@ -1,0 +1,6 @@
+﻿source_id,source_name,url,what_it_supports,limitations,next_step
+S01,GitHub repository,https://github.com/hnk375561-lab/puntoauto,Project-level source; inspect commit and file history,Repository is public; contents can change,Capture commit SHA and access date when integrating
+S02,Dealership profile JSON,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,Structured business details recorded by project,Not independently corroborated in this package,Compare every field with current primary public source
+S03,Vehicle records JSON,https://github.com/hnk375561-lab/puntoauto/blob/main/data/vehicles.json,Structured vehicle records recorded by project,Historical records may not reflect live stock,Verify each vehicle against dated original listing
+S04,Instagram profile,https://www.instagram.com/puntoautoer/,Public profile reference recorded in project,Access may be blocked; account ownership/activity not independently confirmed here,"Record visible handle, bio, public posts and capture date if accessible"
+S05,Google Maps/business listing,https://www.google.com/maps,Platform cited in project notes for contact/hours/rating,Exact listing URL and current state not captured in this package,"Locate exact listing, save URL, query timestamp and visible values"

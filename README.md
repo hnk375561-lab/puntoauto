@@ -1,6 +1,17 @@
-  # Punto Auto: propuesta de sitio (no oficial)
-Sitio estático (HTML/CSS/JS sin dependencias externas). Estructura tomada de la plantilla de referencia indicada por el usuario: `index.html`, `data/dealership.json`, `golive/`, `scripts/`, `docs/`, `css/`, `js/`, `fonts/`, `images/`.
-- `npm run build`: genera las páginas desde `data/dealership.json` y `data/vehicles.json`. Solo se renderizan campos CONFIRMADO-PROPIO o CORROBORADO.
-- `npm test`: controles de publicación (noindex, alt, imágenes, estados, sin relleno).
-- Para mostrar teléfono, dirección, horarios y mapa: cambiar su `estado` en `data/dealership.json` cuando haya captura propia (ver `docs/CAPTURAS_A_TOMAR.md`).
-Repo privado, `noindex` activo, banner de «no oficial».
+# Punto Auto — enriquecimiento de información pública
+
+Fecha de preparación: 2026-10-11
+
+Este paquete contiene únicamente información comercial pública documentada en el repositorio `hnk375561-lab/puntoauto`, junto con trazabilidad y controles de calidad. No implica verificación independiente de los datos originales ni una relación con Villon Automotores.
+
+## Contenido
+- `research/public_source_enrichment.md`: hallazgos nuevos estructurados, procedencia y limitaciones.
+- `data/public_business_profile.csv`: perfil comercial con estado de verificación por campo.
+- `data/source_register.csv`: registro de fuentes y próximos pasos de corroboración.
+- `research/repo_hygiene_and_validation.md`: controles recomendados antes de integrar datos en producción.
+
+## Regla de integración
+No reemplazar los datos canónicos existentes automáticamente. Comparar cada campo con el estado actual del repositorio, conservar el historial y actualizar solo cuando exista evidencia nueva, fechada y reproducible.
+
+## Límite importante
+El inventario detallado de 24 unidades se menciona en el archivo `data/vehicles.json` del repositorio fuente, pero este paquete no duplica los 24 registros porque no se volvió a inspeccionar aquí el contenido completo de cada ficha. No usar el conteo como inventario vigente.

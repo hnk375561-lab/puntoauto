@@ -1,0 +1,12 @@
+﻿field,value,source_url,evidence_status,next_validation_step
+business_name,Punto Auto,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,documented_in_project,Recheck against primary public source
+locality,"Concepción del Uruguay, Entre Ríos, Argentina",https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,documented_in_project,Recheck
+address,Bv. Ricardo Balbín 2086,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,unverified_transcription,Confirm directly on current Maps/business listing
+public_phone,+54 3442 49-7808,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,unverified_transcription,Confirm on official/public listing before reuse
+instagram,https://www.instagram.com/puntoautoer/,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,handle_recorded_in_project,Confirm account identity and current activity
+business_activity,Automobiles and motorcycles; used vehicles,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,documented_claim,Confirm through current public posts/listing
+financing_and_trade_ins,Financing and permutas mentioned in project notes,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,historical_claim_unverified,"Check current terms, eligibility, and validity"
+motorcycle_post,Zanella ZB 110 0 km mentioned,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,historical_post_reference,Do not treat as current stock
+opening_hours,Mon-Fri 08:00-12:00 and 16:00-20:00; Sat 08:30-12:30; Sun closed,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,unverified_transcription,Confirm current hours
+google_rating,5.0 / 6 reviews as recorded in project,https://github.com/hnk375561-lab/puntoauto/blob/main/data/dealership.json,time_sensitive_unverified,Recheck live listing and record query timestamp
+project_vehicle_count,24 records reportedly present in vehicles.json,https://github.com/hnk375561-lab/puntoauto/blob/main/data/vehicles.json,project_snapshot_not_live_inventory,Inspect each listing and verify availability before claiming current stock
