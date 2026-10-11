@@ -1,7 +1,7 @@
 # Guía para mostrarle el sitio al dueño
 **Qué es:** una propuesta armada solo con lo que Punto Auto ya publicó en su Instagram y las fotos de esas publicaciones. Sin contacto previo. Lleva aviso de «no oficial» y no se indexa en buscadores.
 
-**Qué se muestra:** 24 unidades (14 autos, 10 motos) con marca, modelo, versión, año y kilometraje cuando la publicación lo traía; servicios que el negocio menciona (autos y motos usados, financiación, permutas); botón al Instagram; enlace de búsqueda a Google Maps para ver opiniones.
+**Qué se muestra:** 24 unidades (14 autos, 10 motos) con marca, modelo, versión, año y kilometraje cuando la publicación lo traía; servicios que el negocio menciona (autos y motos usados, financiación, permutas); botón al Instagram; enlace de búsqueda a Google Maps para ver opiniones; sección «Antes de comprar un usado» con dos enlaces oficiales (Ley 24.240 y guía del DNRPA).
 
 **Qué quedó fuera y por qué:** teléfono, dirección, horarios y mapa (aparecen en una sola fuente, Google Maps; hacen falta capturas propias); precios (ninguna publicación los trae); condiciones de financiación (son de publicaciones sueltas, sin fecha); puntaje de Google; una unidad (Sharan) cuya foto no coincide con el texto; el kilometraje del Golf (dos publicaciones dicen cosas distintas). Detalle en `CONTRADICCIONES-Y-OMITIDOS.md`.
 

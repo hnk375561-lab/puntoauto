@@ -12,6 +12,9 @@
 | Orientación | Las fotos perdieron el EXIF: fachada, S10 y Corven 110 estaban giradas | Se rotaron |
 | Borrador de datos | El borrador marcaba financiación como DESCONOCIDO; los textos de las publicaciones (material del usuario) la mencionan | Financiación y permuta pasan a CONFIRMADO-PROPIO; el borrador queda superado |
 
+## Decisión sobre enlaces oficiales
+Se agregó la sección «Antes de comprar un usado» con dos enlaces a páginas del Estado (Ley 24.240 en argentina.gob.ar; guía del DNRPA para comprar usados). El prompt (§6.9) pide enlazar, no redactar. El enlace al DNRPA tiene una sola fuente; se publica igual por ser la página oficial misma y no un dato del negocio. Es una decisión a revisar.
+
 ## Datos omitidos
 | Dato | Motivo | Qué lo resolvería |
 |---|---|---|
@@ -27,5 +30,6 @@
 | Garantía | Sin dato | Dato del negocio |
 | Fecha de las publicaciones | Las capturas no traen fecha; no se puede decir si cada unidad sigue vigente | Capturas con fecha visible o URL de cada publicación |
 | Sitio previo, dominio, Wayback | No se relevaron en esta sesión | Consulta pendiente |
-| Comparables de la ciudad (3–5) | No se relevaron | Consulta pendiente |
-| Enlaces legales (Ley 24.240, registro provincial, DNRPA) | No se verificaron URLs oficiales en esta sesión | Buscar y enlazar los textos oficiales vigentes |
+| Comparables de la ciudad (3–5) | Solo se observó 1 (Autopoint, concesionaria Chevrolet); no alcanza para una comparación | Consulta pendiente de 2–4 agencias de usados más |
+| Registro provincial (Entre Ríos) | No se halló una página oficial verificada | Indicar la fuente oficial o buscarla |
+| Contacto vía otras cuentas | Se descartaron cuentas homónimas de otros negocios y países | — |

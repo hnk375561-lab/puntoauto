@@ -21,7 +21,8 @@ const card = (v) => `<li class="u" data-t="${v.tipo}"><button type="button" clas
 <span class="un">${e(v.marca + ' ' + v.modelo)}</span><span class="uv">${e([v.version, meta(v)].filter(Boolean).join(' · '))}</span></button></li>`;
 const mapsSearch = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(`${name} ${city}`);
 const igUrl = ig ? ig.url : null;
-const nav = [['unidades', 'Unidades'], ['servicios', 'Servicios'], ['contacto', 'Contacto']];
+const nav = [['unidades', 'Unidades'], ['servicios', 'Servicios'], ['antes-de-comprar', 'Antes de comprar'], ['contacto', 'Contacto']];
+const legal = (D.enlaces_oficiales || []).filter((l) => l.publicar === true);
 const banner = '<p class="ban">Propuesta de sitio no oficial, aún no aprobada por el negocio</p>';
 const head = (t, d, p = '') => `<!doctype html><html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${e(t)}</title><meta name="description" content="${e(d)}"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#15181C">
@@ -45,15 +46,16 @@ const mapLink = coords ? `<a class="btn bl" href="https://www.google.com/maps/se
 
 const index = head(`${name} · Autos y motos usados${city ? ' en ' + city : ''}`, `Autos y motos usados${city ? ' en ' + city + ', Entre Ríos' : ''}. Unidades publicadas en el Instagram de ${name}.`) +
 `<a class="sk" href="#unidades">Ir a las unidades</a>${banner}
-<header class="h">${mark()}<nav aria-label="Principal">${nav.filter(([id]) => id !== 'servicios' || servicios.length).map(([id, t]) => `<a href="#${id}">${t}</a>`).join('')}</nav></header>
+<header class="h">${mark()}<nav aria-label="Principal">${nav.filter(([id]) => (id !== 'servicios' || servicios.length) && (id !== 'antes-de-comprar' || legal.length)).map(([id, t]) => `<a href="#${id}">${t}</a>`).join('')}</nav></header>
 <main><section class="hero"><div class="hw"><h1>Autos y motos usados${city ? ' en ' + e(city) : ''}</h1>
 <p>${V.length} unidades publicadas en el Instagram de ${e(name)}: ${nAuto} autos y ${nMoto} motos.</p>
 <p class="hb">${igUrl ? `<a class="btn" href="#contacto">Cómo consultar</a>` : ''}<a class="btn bl" href="#unidades">Ver unidades</a></p></div>
-<img src="images/fachada-punto-auto-900.webp" srcset="images/fachada-punto-auto-480.webp 480w, images/fachada-punto-auto-900.webp 900w" sizes="(min-width:900px) 55vw,100vw" width="900" height="506" alt="Frente del local de ${e(name)}, con el cartel sobre la entrada"></section>
+<img fetchpriority="high" decoding="async" src="images/fachada-punto-auto-900.webp" srcset="images/fachada-punto-auto-480.webp 480w, images/fachada-punto-auto-900.webp 900w" sizes="(min-width:900px) 55vw,100vw" width="900" height="506" alt="Frente del local de ${e(name)}, con el cartel sobre la entrada"></section>
 <section id="unidades" class="sec"><h2>Unidades</h2><p class="lead">Fotos y datos tomados de las publicaciones de ${igUrl ? `<a href="${e(igUrl)}" rel="noopener" target="_blank">@${e(ig.valor)}</a>` : e(name)} el 11 de octubre de 2026. Para saber si una unidad sigue disponible, hay que consultarla con el negocio.</p>
 <div class="fl" role="group" aria-label="Filtrar por tipo"><button type="button" class="f on" data-f="all" aria-pressed="true">Todas (${V.length})</button><button type="button" class="f" data-f="auto" aria-pressed="false">Autos (${nAuto})</button><button type="button" class="f" data-f="moto" aria-pressed="false">Motos (${nMoto})</button></div>
 <ul class="g">${V.map(card).join('')}</ul></section>
 ${servicios.length ? `<section id="servicios" class="sec alt"><h2>Servicios</h2><div class="sv">${servicios.map(([t, d]) => `<div><h3>${e(t)}</h3><p>${e(d)}</p></div>`).join('')}</div></section>` : ''}
+${legal.length ? `<section id="antes-de-comprar" class="sec alt"><h2>Antes de comprar un usado</h2><p class="lead">Información oficial para quien compra un vehículo usado. Son páginas del Estado, no del negocio.</p><ul class="lk">${legal.map((l) => `<li><a href="${e(l.url)}" rel="noopener" target="_blank">${e(l.titulo)}</a></li>`).join('')}</ul></section>` : ''}
 <section id="contacto" class="sec"><h2>Contacto</h2>${datos.length ? `<dl class="dl">${datos.join('')}</dl>` : ''}<p class="hb">${contacto.join('')}${mapLink}</p>
 <p class="sm">Opiniones de clientes: <a href="${e(mapsSearch)}" rel="noopener" target="_blank">buscar ${e(name)} en Google Maps</a>.</p></section></main>
 ${foot}<dialog id="dlg" aria-label="Detalle de la unidad"><form method="dialog"><button class="x" aria-label="Cerrar">Cerrar</button></form><img alt="" width="900" height="1200"><h3></h3><p></p></dialog>

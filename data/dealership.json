@@ -129,5 +129,27 @@
  },
  "publicacion": {
   "publicIndexing": false
- }
+ },
+ "enlaces_oficiales": [
+  {
+   "titulo": "Ley 24.240 de Defensa del Consumidor (texto oficial)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/ley-24240-638/texto",
+   "fuente": "argentina.gob.ar, hallado por búsqueda web",
+   "fecha": "2026-10-11",
+   "estado": "CORROBORADO",
+   "nota": "Segundo respaldo: el mismo texto figura en WIPO Lex.",
+   "publicar": true,
+   "regla": "Enlace a fuente oficial pedido en §6.9 del prompt (enlazar, no redactar). No es dato del negocio; se publica porque la fuente es la propia página del Estado, leída en la búsqueda del 2026-10-11."
+  },
+  {
+   "titulo": "DNRPA: guía de preguntas frecuentes para comprar un auto usado",
+   "url": "https://www.argentina.gob.ar/node/145671",
+   "fuente": "argentina.gob.ar (Presidencia de la Nación), hallado por búsqueda web",
+   "fecha": "2026-10-11",
+   "estado": "LEIDO",
+   "nota": "Una sola fuente oficial; se publica por ser página del Estado, no dato del negocio. Ver decisión en docs.",
+   "publicar": true,
+   "regla": "Enlace a fuente oficial pedido en §6.9 del prompt (enlazar, no redactar). No es dato del negocio; se publica porque la fuente es la propia página del Estado, leída en la búsqueda del 2026-10-11."
+  }
+ ]
 }

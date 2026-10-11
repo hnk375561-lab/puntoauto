@@ -6,7 +6,7 @@ const pub = D._meta.publicables, pages = ['index.html', '404.html', 'privacidad.
 for (const p of pages) { const h = R(p); pass(/name="robots" content="noindex, nofollow"/.test(h), p + ': falta noindex'); pass(!/href="#"/.test(h), p + ': href="#"');
   pass((h.match(/<h1/g) || []).length === 1, p + ': debe haber un solo h1'); pass(!/<img(?![^>]*\balt=)/.test(h), p + ': img sin alt'); pass(/Propuesta de sitio no oficial, aún no aprobada por el negocio/.test(h), p + ': falta banner');
   for (const m of h.matchAll(/(?:src|href)="([^"#?:]+\.(?:webp|css|js|svg|woff2|webmanifest|html))"/g)) { const f = m[1].replace(/^\//, ''); pass(fs.existsSync(path.join(root, f)), p + ': no existe ' + f); }
-  pass(!/https?:\/\/(?!www\.instagram\.com|www\.google\.com\/maps)/.test(h.replace(/<a [^>]*>/g, (a) => a)), p + ': recurso externo inesperado'); }
+  pass(!/https?:\/\/(?!www\.instagram\.com|www\.google\.com\/maps|www\.argentina\.gob\.ar)/.test(h.replace(/<a [^>]*>/g, (a) => a)), p + ': recurso externo inesperado'); }
 pass(/Disallow: \//.test(R('robots.txt')), 'robots.txt sin Disallow');
 const idx = R('index.html');
 // Solo estados publicables llegan al HTML
