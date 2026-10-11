@@ -1,0 +1,133 @@
+{
+ "_meta": {
+  "negocio": "Punto Auto",
+  "sitio": "demo-no-oficial",
+  "noindex": true,
+  "generado": "2026-10-11",
+  "regla": "Se publican solo CONFIRMADO-PROPIO y CORROBORADO. LEIDO, CONTRADICTORIO y DESCONOCIDO no salen al sitio.",
+  "publicables": [
+   "CONFIRMADO-PROPIO",
+   "CORROBORADO"
+  ]
+ },
+ "identity": {
+  "tradeName": {
+   "valor": "Punto Auto",
+   "fuente": "Instagram @puntoautoer (fotos de fachada y cartel, captura del usuario)",
+   "fecha": "2026-10-11",
+   "estado": "CONFIRMADO-PROPIO"
+  },
+  "legalName": null,
+  "cuit": null
+ },
+ "location": {
+  "city": {
+   "valor": "Concepción del Uruguay",
+   "fuente": "indicado por el usuario; fachada fotografiada",
+   "fecha": "2026-10-11",
+   "estado": "CONFIRMADO-PROPIO"
+  },
+  "province": "Entre Ríos",
+  "country": "Argentina",
+  "address": {
+   "valor": "Bv. Ricardo Balbín 2086",
+   "fuente": "Google Maps",
+   "fecha": "2026-10-11",
+   "estado": "LEIDO",
+   "pendiente": "captura propia de la ficha de Maps o del Instagram con la dirección; contraste con OpenStreetMap. Sin fuente independiente en la búsqueda web del 2026-10-11."
+  },
+  "coordinates": {
+   "lat": -32.4789563,
+   "lng": -58.2602633,
+   "fuente": "Google Maps",
+   "fecha": "2026-10-11",
+   "estado": "LEIDO",
+   "pendiente": "contrastar con OpenStreetMap"
+  }
+ },
+ "contact": {
+  "phone": {
+   "valor": "+54 3442 49-7808",
+   "fuente": "Google Maps",
+   "fecha": "2026-10-11",
+   "estado": "LEIDO",
+   "pendiente": "captura de la ficha o del Instagram"
+  },
+  "whatsApp": null,
+  "email": null,
+  "instagram": {
+   "valor": "puntoautoer",
+   "url": "https://www.instagram.com/puntoautoer/",
+   "fuente": "perfil de Instagram del negocio (origen de las fotos guardadas por el usuario)",
+   "fecha": "2026-10-11",
+   "estado": "CONFIRMADO-PROPIO",
+   "nota": "Falta captura del perfil abierto para dejar constancia del handle."
+  },
+  "facebook": null,
+  "website": null
+ },
+ "hours": {
+  "valor": "Lunes a viernes 8:00–12:00 y 16:00–20:00; sábados 8:30–12:30; domingos cerrado",
+  "fuente": "Google Maps",
+  "fecha": "2026-10-11",
+  "estado": "LEIDO",
+  "pendiente": "captura propia; feriados desconocidos"
+ },
+ "reputation": {
+  "google": {
+   "rating": 5.0,
+   "count": 6,
+   "fecha": "2026-10-11",
+   "estado": "LEIDO",
+   "uso": "No se publica el puntaje (fuente no propia). Solo enlace de búsqueda a Maps, sin cifras ni textos."
+  }
+ },
+ "services": {
+  "venta_autos_y_motos_usados": {
+   "estado": "CONFIRMADO-PROPIO",
+   "fuente": "Instagram: publicaciones de autos y motos usados"
+  },
+  "financiacion": {
+   "estado": "CONFIRMADO-PROPIO",
+   "fuente": "Instagram: 'Financiaciones', 'Apto financiación', 'Vendo-Permuto-Financio' (textos de publicaciones)",
+   "nota": "Condiciones puntuales (montos, plazos, anticipo, requisitos) aparecen en publicaciones sueltas sin fecha: no se publican."
+  },
+  "permuta": {
+   "estado": "CONFIRMADO-PROPIO",
+   "fuente": "Instagram: 'Permutas', 'Vendo-Permuto-Financio'"
+  },
+  "0km_moto": {
+   "estado": "CONFIRMADO-PROPIO",
+   "fuente": "Instagram: Zanella ZB 110 0 km (una unidad)",
+   "nota": "No se publica como línea de negocio: solo una unidad."
+  },
+  "tramites": {
+   "estado": "INDICIO",
+   "fuente": "reseñas de clientes",
+   "nota": "Omitido."
+  },
+  "consignacion": {
+   "estado": "DESCONOCIDO",
+   "nota": "Omitido."
+  },
+  "garantia": {
+   "estado": "DESCONOCIDO",
+   "nota": "Omitido."
+  }
+ },
+ "inventory": {
+  "archivo": "data/vehicles.json",
+  "unidades": 24,
+  "estado": "CONFIRMADO-PROPIO (fotos y textos de publicaciones)",
+  "fecha_avisos": "desconocida: las capturas no traen fecha de publicación",
+  "captura": "2026-10-11",
+  "regla": "Se muestran como 'publicaciones del Instagram', no como stock vigente."
+ },
+ "assets": {
+  "fotos": "Instagram de Punto Auto, guardadas por el usuario el 2026-10-11. Uso: solo demo privada con crédito. Patentes difuminadas.",
+  "logo": "No se usa el logo del negocio como oficial; marca tipográfica propia."
+ },
+ "publicacion": {
+  "publicIndexing": false
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "name": "Punto Auto",
+ "short_name": "Punto Auto",
+ "lang": "es-AR",
+ "start_url": "./",
+ "display": "browser",
+ "background_color": "#15181C",
+ "theme_color": "#15181C",
+ "icons": [
+  {
+   "src": "images/icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}
