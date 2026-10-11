@@ -1,17 +1,16 @@
-# Punto Auto — enriquecimiento de información pública
+# Punto Auto — suplemento de auditoría pública (segunda entrega)
 
-Fecha de preparación: 2026-10-11
+Fecha de revisión: 2026-10-11  
+Repositorio inspeccionado: https://github.com/hnk375561-lab/puntoauto
 
-Este paquete contiene únicamente información comercial pública documentada en el repositorio `hnk375561-lab/puntoauto`, junto con trazabilidad y controles de calidad. No implica verificación independiente de los datos originales ni una relación con Villon Automotores.
+Este paquete es **aditivo**: aporta observaciones sobre el estado actual visible del repositorio, reglas de publicación, lagunas del modelo de datos y problemas concretos de calidad. No reemplaza el primer paquete de enriquecimiento y no modifica el repositorio automáticamente.
 
-## Contenido
-- `research/public_source_enrichment.md`: hallazgos nuevos estructurados, procedencia y limitaciones.
-- `data/public_business_profile.csv`: perfil comercial con estado de verificación por campo.
-- `data/source_register.csv`: registro de fuentes y próximos pasos de corroboración.
-- `research/repo_hygiene_and_validation.md`: controles recomendados antes de integrar datos en producción.
+## Archivos
+- `audit/revision_repositorio.md`: auditoría de la estructura, reglas y riesgos de publicación.
+- `audit/registro_calidad_datos.csv`: inconsistencias y vacíos concretos observables en los datos.
+- `audit/registro_evidencia_publica.csv`: afirmaciones y evidencias con estado correcto.
+- `data/campos_pendientes.csv`: campos ausentes o sin corroboración y cómo resolverlos.
+- `SHA256SUMS.txt`: hashes de los archivos del paquete.
 
-## Regla de integración
-No reemplazar los datos canónicos existentes automáticamente. Comparar cada campo con el estado actual del repositorio, conservar el historial y actualizar solo cuando exista evidencia nueva, fechada y reproducible.
-
-## Límite importante
-El inventario detallado de 24 unidades se menciona en el archivo `data/vehicles.json` del repositorio fuente, pero este paquete no duplica los 24 registros porque no se volvió a inspeccionar aquí el contenido completo de cada ficha. No usar el conteo como inventario vigente.
+## Límite de la revisión
+La revisión se basa en archivos públicos visibles del repositorio en la rama `main`. No se ejecutó `npm run build` ni `npm test`, no se descargó el repositorio completo ni se inspeccionó visualmente cada imagen. Por eso los hallazgos estáticos deben validarse localmente antes de cerrar issues.

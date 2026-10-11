@@ -1,0 +1,16 @@
+﻿ruta_campo,concepto,estado_actual,motivo,prueba_necesaria,estado_recomendado
+identity.legalName,Nombre legal,null,No inferir desde nombre comercial,"Fuente oficial pública pertinente, si existe",no_confirmado
+identity.cuit,CUIT,null,No buscar ni publicar información no necesaria; no inferir,"Fuente oficial pública pertinente, si existe",no_confirmado
+location.address,Dirección,LEIDO,El dato de Maps no está acompañado de captura propia en el proyecto,Captura fechada de ficha oficial/pública y contraste independiente,pendiente
+location.coordinates,Coordenadas,LEIDO,Solo se registra Google Maps como fuente,Contrastar con OpenStreetMap o fuente cartográfica equivalente,pendiente
+contact.phone,Teléfono,LEIDO,Falta captura de la ficha o perfil,Captura fechada de fuente pública del negocio,pendiente
+contact.whatsApp,WhatsApp,null,No asumir que coincide con teléfono,Solo añadir si aparece como canal oficial público,no_documentado
+contact.email,Email,null,No inventar formato de correo,Solo añadir si aparece publicado oficialmente,no_documentado
+contact.facebook,Facebook,null,No asumir cuenta por coincidencia de nombre,Identificar página oficial con evidencia,no_documentado
+contact.website,Sitio web,null,El demo del repo no prueba que el negocio tenga web oficial,Verificar dominio controlado por el negocio,no_documentado
+hours,Horarios,LEIDO,No hay captura propia; feriados desconocidos,Captura fechada y corroboración,pendiente
+reputation.google,Rating y cantidad de reseñas,LEIDO,"Dato volátil, muestra pequeña y sin captura adjunta",Volver a consultar ficha y registrar fecha; no usar como promesa comercial,pendiente
+inventory.fecha_aviso,Fecha original de anuncio,null/desconocida,No puede determinarse la vigencia,URL o captura con fecha visible para cada unidad,bloquea_stock_vigente
+inventory.precio,Precio por unidad,null en registros revisados,No inferir ni estimar precio de venta,Publicación original fechada con precio,pendiente
+services.consignacion,Consignación,DESCONOCIDO,No documentado,Solo declarar si el negocio lo publica o confirma,desconocido
+services.garantia,Garantía comercial,DESCONOCIDO,No documentada,Fuente oficial del negocio; distinguirla de derechos legales generales,desconocido

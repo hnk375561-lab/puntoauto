@@ -1,0 +1,11 @@
+﻿id,archivo,registro,campo,valor_observado,hallazgo,clasificacion,accion_recomendada
+DQ-01,data/vehicles.json,peugeot-208-allure-2016,archivo_origen,peugeot-208-2018.jpg,La etiqueta del registro indica Allure 2016 pero el archivo de origen contiene 2018 en el nombre,posible_cruce_de_imagen,Abrir imagen y contrastar con publicación original; no corregir solo por el nombre
+DQ-02,data/vehicles.json,peugeot-208-feline-2018,archivo_origen,peugeot-208-allure-2016.jpg,La etiqueta del registro indica Feline 2018 pero el archivo de origen contiene Allure 2016 en el nombre,posible_cruce_de_imagen,Abrir imagen y contrastar con publicación original; no corregir solo por el nombre
+DQ-03,data/vehicles.json,vw-golf-2017,km,null,Kilometraje ausente,dato_incompleto,Mantener null hasta encontrar fuente
+DQ-04,data/vehicles.json,renault-sandero-stepway-privilege,anio / km,null / null,Año y kilometraje ausentes,dato_incompleto,Mantener null hasta encontrar fuente
+DQ-05,data/vehicles.json,chevrolet-s10-2013,km,null,Kilometraje ausente,dato_incompleto,Mantener null hasta encontrar fuente
+DQ-06,data/vehicles.json,honda-xr-190l-2019,km,null,Kilometraje ausente,dato_incompleto,Mantener null hasta encontrar fuente
+DQ-07,data/vehicles.json,bajaj-rouser-ns200-2019,km,null,Kilometraje ausente,dato_incompleto,Mantener null hasta encontrar fuente
+DQ-08,data/vehicles.json,registros del inventario,fecha_aviso / precio,null en registros inspeccionados,No se puede deducir vigencia ni precio a partir de la captura del 2026-10-11,limitacion_temporal_y_comercial,Añadir URL original y fecha visible; no presentar como stock vigente
+DQ-09,data/dealership.json,identity.legalName / identity.cuit,legalName / cuit,null,Identidad legal y CUIT no documentados en el perfil,dato_ausente,No inferir; solo añadir si existe fuente pública oficial pertinente
+DQ-10,data/dealership.json,contact,whatsApp / email / facebook / website,null,Canales no documentados en el perfil,dato_ausente,No inventar ni inferir; verificar canales oficiales
